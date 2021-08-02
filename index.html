@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="array-inputs">
+        <p>Size of the array:</p>
+        <input id="size" type="range" min="20" max="150" step="1" value="80" />
+        <p>Speed of the algorithm:</p>
+        <input id="speed" type="range" min="1" max="5" step="1" value="4" />
+        <button id="generate">Generate New Array</button>
+      </div>
+      <div class="nav-right">
+        <p class="nav-heading">Sorting visualizer</p>
+        <a href="#"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <!-- <input type="button" value="Reload" onClick="window.location.reload();"> -->
+    </nav>
+
+    <div class="container">
+      <div class="buttons-right">
+        <div class="algos">
+          <button>Bubble</button>
+          <button>Selection</button>
+          <button>Insertion</button>
+          <button>Merge</button>
+          <button>Quick</button>
+          <button>Heap</button>
+        </div>
+      </div>
+      <section>
+        <div id="array_container"></div>
+      </section>
+    </div>
+    <!-- scripts -->
+    <script src="./script/main.js"></script>
+    <!-- This should be loaded after main.js -->
+    <script src="./script/visualizations.js"></script>
+    
+    <!-- Algorithms -->
+    <script src="./script/bubble_sort.js"></script>
+    <script src="./script/selection_sort.js"></script>
+    <script src="./script/insertion_sort.js"></script>
+    <script src="./script/merge_sort.js"></script>
+    <script src="./script/quick_sort.js"></script>
+    <script src="./script/heap_sort.js"></script>
+  </body>
+</html>
